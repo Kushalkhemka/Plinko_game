@@ -36,6 +36,8 @@ function draw() {
   //black background
   background(0);  
 
+  Engine.update(engine);
+
   //displaying ground
   bottomdivision.display();
 
@@ -81,10 +83,10 @@ function draw() {
     plinkos[e].display();
   }
 
-  //Displaying particles after every 90 frames
-  if(frameCount%90===0)
+  //Displaying particles after every 60 frames
+  if(frameCount%60===0)
   {
-    particles.push(new Particle(random(230,250),10,10));
+    particles.push(new Particle(random(width/2-10,width/2+10),10,10));
   }
   
   //Displaying particles
