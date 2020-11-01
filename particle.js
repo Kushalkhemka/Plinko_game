@@ -6,9 +6,9 @@ class Particle
         var options=
         {
             
-            //'density':1.0,
-          // 'friction':1.0,
-            restitution:0.4
+          //  'density':1.0,
+         //  'friction':1.0,
+            restitution:0.6
         }
         this.r=r;
         this.body=Bodies.circle(x,y,this.r,options);
