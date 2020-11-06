@@ -5,8 +5,9 @@ class Plinko
         var options=
         {
             isStatic:true,
-            density:1.0,
-            friction:1.0
+            //density:1.0,
+            //friction:1.0
+            
         }
         this.body=Bodies.circle(x,y,10,options);
         World.add(world,this.body);
