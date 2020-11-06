@@ -8,7 +8,8 @@ class Particle
             
           //  'density':1.0,
          //  'friction':1.0,
-            restitution:0.6
+            restitution:0.4,
+           // AirFriction:1.0
         }
         this.r=r;
         this.body=Bodies.circle(x,y,this.r,options);
